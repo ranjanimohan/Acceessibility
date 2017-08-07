@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#ball_1,#ball_2,#ball_3,#ball_4").click(function(){
+        $(this).animate({margin: "0 0 0 300px"});
+        $(this).animate({margin: "300px 0 0 300px"});
+        $(this).fadeOut();
+    });
+
+    // $("#ball_2").click(function(){
+    //     $("#ball_2").animate({margin: "0 0 0 300px"});
+    //     $("#ball_2").animate({margin: "300px 0 0 300px"});
+    //     $("#ball_2").fadeOut();
+    // });
+    // $("#ball_3").click(function(){
+    //     $("#ball_3").animate({margin: "0 0 0 400px"});
+    //     $("#ball_3").animate({margin: "400px 0 0 400px"});
+    //     $("#ball_3").fadeOut();
+    // });
+    // $("#ball_4").click(function(){
+    //     $("#ball_4").animate({margin: "0 0 0 400px"});
+    //     $("#ball_4").animate({margin: "400px 0 0 400px"});
+    //     $("#ball_4").fadeOut();
+    // });
+});
+</script>
+<style>
+#ball_1{
+  position: absolute;
+  background:#98bf21;
+  height:100px;
+  width:100px;
+  border-radius: 50px;
+  display:inline-block;
+}
+#ball_2{
+  position: absolute;
+  background:#98bf00;
+  height:100px;
+  width:100px;
+  border-radius: 50px;
+  margin-left: 150px;
+  display:inline-block;
+}
+#ball_3{
+  position: absolute;
+  background:#980021;
+  height:100px;
+  width:100px;
+  border-radius: 50px;
+  margin-left: 470px;
+  display:inline-block;
+}
+#ball_4{
+  position: absolute;
+  background:#00bf21;
+  height:100px;
+  width:100px;
+  border-radius: 50px;
+  margin-left: 620px;
+  display:inline-block;
+}
+#box_1{
+  position: absolute;
+  background:#000000;
+  height:50px;
+  width:300px;
+  display:block;
+  margin-top: 100px;
+}
+#box_2{
+  position: absolute;
+  background:#000000;
+  height:50px;
+  width:300px;
+  display:block;
+  margin: 100px 0 0 420px;
+}
+</style>
+</head>
+<body>
+
+
+<div id="ball_1"></div>
+<div id="ball_2"></div>
+<div id="ball_3"></div>
+<div id="ball_4"></div>
+
+<div id="box_1"></div>
+<div id="box_2"></div>
+
+</body>
+</html>
